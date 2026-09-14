@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roteiro PGRCC | Gerenciamento de Resíduos Sólidos</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Google Fonts (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Header / Navbar -->
+    <header class="bg-emerald-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3">
+                <div class="p-2 bg-emerald-700/50 rounded-lg">
+                    <i data-lucide="hard-hat" class="w-8 h-8 text-emerald-300"></i>
+                </div>
+                <div>
+                    <h1 class="font-bold text-xl leading-tight">Roteiro Técnico: PGRCC</h1>
+                    <p class="text-xs text-emerald-200">Plano de Gerenciamento de Resíduos da Construção Civil</p>
+                </div>
+            </div>
+            
+            <nav class="flex items-center gap-6 text-sm font-medium text-emerald-100">
+                <a href="index.html" class="flex items-center gap-1.5 hover:text-white transition-colors bg-emerald-800/60 px-3 py-1.5 rounded-lg border border-emerald-700/50">
+                    <i data-lucide="arrow-left" class="w-4 h-4"></i> Voltar ao Início
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-b from-emerald-900 to-emerald-800 text-white py-10 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <div>
+                <span class="text-xs uppercase tracking-wider text-emerald-300 font-semibold">Diretriz Prática</span>
+                <h2 class="text-2xl font-bold mt-1">Elaboração de PGRCC no Canteiro de Obras</h2>
+                <p class="text-xs text-emerald-200 mt-1 max-w-2xl">
+                    Guia de referência alinhado à Resolução CONAMA 307/2002 e às normas ABNT NBR 15.112 a 15.116.
+                </p>
+            </div>
+            <div class="flex items-center gap-2 bg-emerald-800/40 border border-emerald-700/50 px-4 py-2.5 rounded-xl text-xs text-emerald-200">
+                <i data-lucide="shield-check" class="w-5 h-5 text-emerald-300"></i>
+                <span>Engenharia Civil • 9º Período</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conteúdo Principal -->
+    <main class="max-w-6xl mx-auto px-4 py-10 flex-grow space-y-10">
+
+        <!-- Passo 1: Caracterização -->
+        <section class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-4">
+            <div class="flex items-center gap-3">
+                <span class="text-xs font-bold px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full">Passo 1</span>
+                <h2 class="text-xl font-bold text-slate-800">Caracterização do Empreendimento e Triagem</h2>
+            </div>
+            <p class="text-slate-600 text-sm leading-relaxed">
+                A primeira etapa consiste em delimitar o escopo da obra e classificar os resíduos gerados na fonte segundo a CONAMA 307:
+            </p>
+            
+            <div class="grid md:grid-cols-4 gap-4 mt-4">
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-lg">
+                    <span class="text-xs font-bold text-emerald-700 uppercase">Classe A</span>
+                    <h3 class="font-semibold text-slate-800 text-sm mt-1">Reutilizáveis / Recicláveis</h3>
+                    <p class="text-xs text-slate-500 mt-1">Tijolos, argamassa, concreto, blocos, tubulações cerâmicas.</p>
+                </div>
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-lg">
+                    <span class="text-xs font-bold text-blue-700 uppercase">Classe B</span>
+                    <h3 class="font-semibold text-slate-800 text-sm mt-1">Recicláveis (Outros)</h3>
+                    <p class="text-xs text-slate-500 mt-1">Plásticos, papel/papelão, metais, vidros, madeira.</p>
+                </div>
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-lg">
+                    <span class="text-xs font-bold text-amber-700 uppercase">Classe C</span>
+                    <h3 class="font-semibold text-slate-800 text-sm mt-1">Sem Tecnologia Viável</h3>
+                    <p class="text-xs text-slate-500 mt-1">Gesso e produtos derivados (quando não reciclados separadamente).</p>
+                </div>
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-lg">
+                    <span class="text-xs font-bold text-rose-700 uppercase">Classe D</span>
+                    <h3 class="font-semibold text-slate-800 text-sm mt-1">Perigosos</h3>
+                    <p class="text-xs text-slate-500 mt-1">Tintas, solventes, óleos, amianto, telhas contaminadas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Passo 2: Acondicionamento -->
+        <section class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-4">
+            <div class="flex items-center gap-3">
+                <span class="text-xs font-bold px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full">Passo 2</span>
+                <h2 class="text-xl font-bold text-slate-800">Acondicionamento e Armazenamento Temporário</h2>
+            </div>
+            
+            <ul class="space-y-3 text-sm text-slate-600">
+                <li class="flex items-start gap-2">
+                    <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-600 shrink-0 mt-0.5"></i>
+                    <span><strong>Baia de Seleção:</strong> Definir no layout do canteiro áreas sinalizadas e separadas por classe de resíduo.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-600 shrink-0 mt-0.5"></i>
+                    <span><strong>Caçambas Estacionárias:</strong> Utilizar caçambas identificadas por cor para evitar contaminação cruzada.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-600 shrink-0 mt-0.5"></i>
+                    <span><strong>Resíduos Perigosos (Classe D):</strong> Armazenar em local coberto, impermeabilizado e com contenção contra vazamentos.</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Passo 3: Transporte e Destinação -->
+        <section class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-4">
+            <div class="flex items-center gap-3">
+                <span class="text-xs font-bold px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full">Passo 3</span>
+                <h2 class="text-xl font-bold text-slate-800">Transporte e Destinação Final Ambientalmente Adequada</h2>
+            </div>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-sm text-slate-600 border-collapse">
+                    <thead>
+                        <tr class="border-b border-slate-200 bg-slate-50 text-slate-700">
+                            <th class="p-3">Classe</th>
+                            <th class="p-3">Destinação Recomendada</th>
+                            <th class="p-3">Documentação Necessária</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <tr>
+                            <td class="p-3 font-semibold text-slate-800">Classe A</td>
+                            <td class="p-3">ATT (Área de Transbordo e Triagem) ou Usina de Reciclagem de Agregados</td>
+                            <td class="p-3 text-xs">MTR (Manifesto de Transporte de Resíduos)</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-semibold text-slate-800">Classe B</td>
+                            <td class="p-3">Cooperativas de Reciclagem / Centrais de Valorização</td>
+                            <td class="p-3 text-xs">MTR / Certificado de Destinação Final</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-semibold text-slate-800">Classe C</td>
+                            <td class="p-3">Aterro de Resíduos da Construção Civil (Licenciado)</td>
+                            <td class="p-3 text-xs">MTR</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-semibold text-slate-800">Classe D</td>
+                            <td class="p-3">Aterro Industrial Perigoso (Classe I) ou Coprocessamento</td>
+                            <td class="p-3 text-xs">MTR + Licença do Transportador Especializado</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Checklist de Implantação -->
+        <section class="bg-emerald-900 text-white p-6 rounded-xl shadow-sm space-y-4">
+            <h2 class="text-xl font-bold flex items-center gap-2">
+                <i data-lucide="clipboard-check" class="text-emerald-300"></i> Checklist de Aplicação Prática
+            </h2>
+            <div class="grid md:grid-cols-2 gap-4 text-sm">
+                <div class="bg-emerald-800/60 border border-emerald-700/50 p-4 rounded-lg flex items-center gap-3">
+                    <i data-lucide="check-square" class="text-emerald-300 w-5 h-5 shrink-0"></i>
+                    <span>ART (Anotação de Responsabilidade Técnica) recolhida do PGRCC</span>
+                </div>
+                <div class="bg-emerald-800/60 border border-emerald-700/50 p-4 rounded-lg flex items-center gap-3">
+                    <i data-lucide="check-square" class="text-emerald-300 w-5 h-5 shrink-0"></i>
+                    <span>Treinamento e DDS (Diálogo Diário de Segurança) com os operários</span>
+                </div>
+                <div class="bg-emerald-800/60 border border-emerald-700/50 p-4 rounded-lg flex items-center gap-3">
+                    <i data-lucide="check-square" class="text-emerald-300 w-5 h-5 shrink-0"></i>
+                    <span>Sinalização clara de todas as baias e caçambas do canteiro</span>
+                </div>
+                <div class="bg-emerald-800/60 border border-emerald-700/50 p-4 rounded-lg flex items-center gap-3">
+                    <i data-lucide="check-square" class="text-emerald-300 w-5 h-5 shrink-0"></i>
+                    <span>Controle rigoroso dos MTRs emitidos e arquivados para fiscalização</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-slate-900 text-slate-400 py-6 border-t border-slate-800 mt-auto">
+        <div class="max-w-6xl mx-auto px-4 text-center text-xs space-y-1">
+            <p>© 2026 • Engenharia Civil • Gerenciamento de Resíduos Sólidos</p>
+            <p class="text-slate-500">Desenvolvido para acompanhamento acadêmico.</p>
+        </div>
+    </footer>
+
+    <!-- Script dos Ícones -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
