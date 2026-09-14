@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Resíduos Sólidos | Engenharia Civil</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Google Fonts (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Header / Navbar -->
+    <header class="bg-emerald-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3">
+                <div class="p-2 bg-emerald-700/50 rounded-lg">
+                    <i data-lucide="recycle" class="w-8 h-8 text-emerald-300"></i>
+                </div>
+                <div>
+                    <h1 class="font-bold text-xl leading-tight">Gerenciamento de Resíduos Sólidos</h1>
+                    <p class="text-xs text-emerald-200">Engenharia Civil • 9º Período</p>
+                </div>
+            </div>
+            
+            <nav class="flex items-center gap-6 text-sm font-medium text-emerald-100">
+                <a href="#ementa" class="hover:text-white transition-colors">Ementa</a>
+                <a href="#cronograma" class="hover:text-white transition-colors">Cronograma</a>
+                <a href="#materiais" class="hover:text-white transition-colors">Materiais</a>
+                <a href="#avaliacao" class="hover:text-white transition-colors">Avaliação</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-b from-emerald-900 to-emerald-800 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
+            <div class="bg-emerald-800/40 border border-emerald-700/50 p-5 rounded-xl flex items-start gap-4">
+                <i data-lucide="user" class="w-6 h-6 text-emerald-300 mt-1"></i>
+                <div>
+                    <span class="text-xs uppercase tracking-wider text-emerald-300 font-semibold">Docente</span>
+                    <p class="font-semibold text-base mt-0.5">Prof. [Seu Nome Aqui]</p>
+                    <p class="text-xs text-emerald-200 mt-1">Contato: email@universidade.edu.br</p>
+                </div>
+            </div>
+
+            <div class="bg-emerald-800/40 border border-emerald-700/50 p-5 rounded-xl flex items-start gap-4">
+                <i data-lucide="clock" class="w-6 h-6 text-emerald-300 mt-1"></i>
+                <div>
+                    <span class="text-xs uppercase tracking-wider text-emerald-300 font-semibold">Aulas & Horários</span>
+                    <p class="font-semibold text-base mt-0.5">Terças e Quintas</p>
+                    <p class="text-xs text-emerald-200 mt-1">19:00 - 20:40 • Sala 204</p>
+                </div>
+            </div>
+
+            <div class="bg-emerald-800/40 border border-emerald-700/50 p-5 rounded-xl flex items-start gap-4">
+                <i data-lucide="file-text" class="w-6 h-6 text-emerald-300 mt-1"></i>
+                <div>
+                    <span class="text-xs uppercase tracking-wider text-emerald-300 font-semibold">Norma-Chave</span>
+                    <p class="font-semibold text-base mt-0.5">PNRS (Lei 12.305/10)</p>
+                    <p class="text-xs text-emerald-200 mt-1">NBR 10.004 / NBR 15.112</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conteúdo Principal -->
+    <main class="max-w-6xl mx-auto px-4 py-10 flex-grow space-y-12">
+
+        <!-- Ementa / Objetivos -->
+        <section id="ementa" class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+            <h2 class="text-xl font-bold text-slate-800 flex items-center gap-2 mb-4">
+                <i data-lucide="book-open" class="text-emerald-600"></i> Objetivos da Disciplina
+            </h2>
+            <p class="text-slate-600 leading-relaxed">
+                A disciplina aborda os aspectos técnicos, regulatórios, ambientais e operacionais para a gestão integrada e o gerenciamento sustentável dos resíduos sólidos urbanos e da construção civil (RCC). O foco abrange desde a caracterização física dos resíduos e logística reversa até projetos práticos de dimensionamento de aterros sanitários e centrais de triagem.
+            </p>
+        </section>
+
+        <!-- Cronograma de Aulas -->
+        <section id="cronograma" class="space-y-4">
+            <h2 class="text-xl font-bold text-slate-800 flex items-center gap-2">
+                <i data-lucide="calendar" class="text-emerald-600"></i> Cronograma das Unidades
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-4">
+                <!-- Unidade 1 -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <span class="text-xs font-bold px-2.5 py-1 bg-emerald-100 text-emerald-800 rounded-full">Unidade 1</span>
+                    <h3 class="font-bold text-lg text-slate-800 mt-2">Introdução e Legislação Ambiental</h3>
+                    <ul class="mt-3 space-y-2 text-sm text-slate-600">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Panorama dos Resíduos Sólidos no Brasil</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Política Nacional de Resíduos Sólidos (PNRS)</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Classificação dos Resíduos (NBR 10.004)</li>
+                    </ul>
+                </div>
+
+                <!-- Unidade 2 -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <span class="text-xs font-bold px-2.5 py-1 bg-emerald-100 text-emerald-800 rounded-full">Unidade 2</span>
+                    <h3 class="font-bold text-lg text-slate-800 mt-2">Resíduos da Construção Civil (RCC)</h3>
+                    <ul class="mt-3 space-y-2 text-sm text-slate-600">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Resolução CONAMA 307 e atualizações</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Elaboração de PGRCC em canteiros de obras</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Reciclagem de agregados e Usinas de Triagem</li>
+                    </ul>
+                </div>
+
+                <!-- Unidade 3 -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <span class="text-xs font-bold px-2.5 py-1 bg-emerald-100 text-emerald-800 rounded-full">Unidade 3</span>
+                    <h3 class="font-bold text-lg text-slate-800 mt-2">Aterros Sanitários & Engenharia</h3>
+                    <ul class="mt-3 space-y-2 text-sm text-slate-600">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Critérios de seleção de áreas e licenciamento</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Impermeabilização, drenagem de chorume e gás</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Dimensionamento geotécnico e de vida útil</li>
+                    </ul>
+                </div>
+
+                <!-- Unidade 4 -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <span class="text-xs font-bold px-2.5 py-1 bg-emerald-100 text-emerald-800 rounded-full">Unidade 4</span>
+                    <h3 class="font-bold text-lg text-slate-800 mt-2">Tecnologias de Tratamento e Valoração</h3>
+                    <ul class="mt-3 space-y-2 text-sm text-slate-600">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Compostagem e Biodigestão anaeróbia</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Incineração e Recuperação Energética (WTE)</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Economia Circular e Cidades Sustentáveis</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Materiais e Downloads -->
+        <section id="materiais" class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-4">
+            <h2 class="text-xl font-bold text-slate-800 flex items-center gap-2">
+                <i data-lucide="folder-down" class="text-emerald-600"></i> Materiais de Apoio
+            </h2>
+
+            <div class="divide-y divide-slate-100">
+                <div class="py-3 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="file" class="w-5 h-5 text-slate-400"></i>
+                        <div>
+                            <p class="font-medium text-slate-800 text-sm">Apresentação - Unidade 1: PNRS e NBR 10004</p>
+                            <p class="text-xs text-slate-500">PDF • 4.2 MB</p>
+                        </div>
+                    </div>
+                    <a href="#" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-xs font-semibold transition-colors flex items-center gap-1">
+                        <i data-lucide="download" class="w-3.5 h-3.5"></i> Baixar
+                    </a>
+                </div>
+
+                <div class="py-3 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="file-spreadsheet" class="w-5 h-5 text-emerald-600"></i>
+                        <div>
+                            <p class="font-medium text-slate-800 text-sm">Planilha de Dimensionamento de Aterro Sanitário</p>
+                            <p class="text-xs text-slate-500">XLSX • Template para o trabalho final</p>
+                        </div>
+                    </div>
+                    <a href="#" class="px-3 py-1.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 rounded-lg text-xs font-semibold transition-colors flex items-center gap-1">
+                        <i data-lucide="download" class="w-3.5 h-3.5"></i> Baixar
+                    </a>
+                </div>
+
+                <div class="py-3 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="file-text" class="w-5 h-5 text-slate-400"></i>
+                        <div>
+                            <p class="font-medium text-slate-800 text-sm">Roteiro para Elaboração de PGRCC</p>
+                            <p class="text-xs text-slate-500">PDF • Diretrizes técnicas para canteiro</p>
+                        </div>
+                    </div>
+                    <a href="#" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-xs font-semibold transition-colors flex items-center gap-1">
+                        <i data-lucide="download" class="w-3.5 h-3.5"></i> Baixar
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Critérios de Avaliação -->
+        <section id="avaliacao" class="bg-emerald-900 text-white p-6 rounded-xl shadow-sm space-y-4">
+            <h2 class="text-xl font-bold flex items-center gap-2">
+                <i data-lucide="award" class="text-emerald-300"></i> Sistema de Avaliação
+            </h2>
+            <div class="grid md:grid-cols-3 gap-4 text-center">
+                <div class="bg-emerald-800/60 border border-emerald-700/50 p-4 rounded-lg">
+                    <p class="text-xs uppercase text-emerald-300 font-semibold">Avaliação 1 (AP1)</p>
+                    <p class="text-2xl font-bold mt-1">30%</p>
+                    <p class="text-xs text-emerald-200 mt-1">Prova Teórica (Unidades 1 e 2)</p>
+                </div>
+                <div class="bg-emerald-800/60 border border-emerald-700/50 p-4 rounded-lg">
+                    <p class="text-xs uppercase text-emerald-300 font-semibold">Projeto Prático</p>
+                    <p class="text-2xl font-bold mt-1">40%</p>
+                    <p class="text-xs text-emerald-200 mt-1">Dimensionamento de Aterro Sanitário / PGRCC</p>
+                </div>
+                <div class="bg-emerald-800/60 border border-emerald-700/50 p-4 rounded-lg">
+                    <p class="text-xs uppercase text-emerald-300 font-semibold">Avaliação 2 (AP2)</p>
+                    <p class="text-2xl font-bold mt-1">30%</p>
+                    <p class="text-xs text-emerald-200 mt-1">Seminários & Estudos de Caso</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-slate-900 text-slate-400 py-6 border-t border-slate-800 mt-auto">
+        <div class="max-w-6xl mx-auto px-4 text-center text-xs space-y-1">
+            <p>© 2026 • Engenharia Civil • Gerenciamento de Resíduos Sólidos</p>
+            <p class="text-slate-500">Desenvolvido para acompanhamento acadêmico.</p>
+        </div>
+    </footer>
+
+    <!-- Script dos Ícones -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
